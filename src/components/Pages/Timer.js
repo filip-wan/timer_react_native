@@ -3,12 +3,12 @@ import {StyleSheet, View, Text} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {Link} from 'react-router-native';
 
-const Settings = ({navigation}) => {
+const Timer = ({navigation}) => {
   return (
     <View>
-      <Link to={'/'}>
+      {/* <Link to={'/stopwatch'}>
         <Text style={styles.text}>Settings</Text>
-      </Link>
+      </Link> */}
     </View>
   );
 };
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     fontSize: 50,
   },
 });
-export default Settings;
+export default Timer;

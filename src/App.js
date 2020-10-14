@@ -1,22 +1,17 @@
-import * as React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
-import {NativeRouter, Route, Link} from 'react-router-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import Footer from './components/Footer';
+import React from 'react';
+import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import {NativeRouter} from 'react-router-native';
+import {Colors} from 'consts';
 import Router from './Router';
+import Footer from 'components/Footer';
+import Navbar from 'components/Navbar';
 
 const App = () => {
   return (
     <NativeRouter>
-      <StatusBar barStyle="light-content" backgroundColor={Colors.dark} />
+      <StatusBar barStyle="light-content" backgroundColor={Colors.navbar} />
       <SafeAreaView style={styles.root}>
+        <Navbar />
         <Router />
       </SafeAreaView>
       <Footer />
@@ -24,39 +19,10 @@ const App = () => {
   );
 };
 
-const border = {
-  borderColor: 'gold',
-  borderStyle: 'solid',
-  borderWidth: 2,
-};
-
 const styles = StyleSheet.create({
-  scrollView: {
-    // ...border,
-  },
   root: {
     flex: 1,
-    backgroundColor: Colors.dark,
-  },
-  text: {
-    color: Colors.light,
-    textAlign: 'center',
-    marginTop: 100,
-    fontSize: 50,
-  },
-  engine: {
-    position: 'absolute',
-    right: 10,
-    left: 10,
-    bottom: 0,
-  },
-  footer: {
-    color: Colors.light,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'center',
+    backgroundColor: Colors.background,
   },
 });
 

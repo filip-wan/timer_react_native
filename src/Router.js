@@ -1,13 +1,13 @@
 import * as React from 'react';
-import Home from './components/Pages/Home';
-import Settings from './components/Pages/Settings';
+import Stopwatch from 'components/Pages/Stopwatch';
+import Timer from 'components/Pages/Timer';
 import {Route} from 'react-router-native';
 
 const Router = () => {
   return (
     <>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/settings" component={Settings} />
+      <Route exact path="/" component={Timer} />
+      <Route exact path="/stopwatch" component={Stopwatch} />
     </>
   );
 };
