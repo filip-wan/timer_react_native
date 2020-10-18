@@ -8,7 +8,6 @@ const {text} = CommonStyles;
 
 const Navbar = () => {
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <View style={styles.navbar}>
       <NavLink to="/" location={location}>

@@ -1,13 +1,11 @@
-import * as React from 'react';
+import React from 'react';
 import {StyleSheet, Text} from 'react-native';
-import {Link, useLocation} from 'react-router-native';
+import {Link} from 'react-router-native';
 import {Colors, CommonStyles} from 'consts/';
 
 const {tab, text} = CommonStyles;
 
 const NavLink = ({to, children, location}) => {
-  // const location = useLocation();
-  // console.log(location.pathname);
   return (
     <Link
       style={location.pathname === to ? styles.selectedTab : styles.tab}

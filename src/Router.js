@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Stopwatch from 'components/Pages/Stopwatch';
 import Timer from 'components/Pages/Timer';
 import {Route} from 'react-router-native';

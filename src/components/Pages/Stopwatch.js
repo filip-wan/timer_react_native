@@ -1,15 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import {Colors, CommonStyles} from 'consts/';
+import React, {useState} from 'react';
+import {CommonStyles} from 'consts/';
 import {
   StyleSheet,
   View,
   Text,
-  ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import {Link} from 'react-router-native';
 
-const {border, button, text} = CommonStyles;
+const {button, text} = CommonStyles;
 
 const Stopwatch = () => {
   const [isGoing, setIsGoing] = useState(false);
